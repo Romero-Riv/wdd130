@@ -50,7 +50,7 @@ main img {
     height: auto;
     border: 1px;
     padding: 1px;
-    box-shadow: 1px;
+    box-shadow: 1px 1px 5px gray;
 }
 
 p {
