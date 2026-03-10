@@ -48,10 +48,14 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px;
+    padding: 1px;
+    box-shadow: 1px #000;
+
 }
 
 p {
-    padding: 0;
+    padding: 1px;
 }
 
 footer {
