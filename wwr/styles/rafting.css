@@ -21,9 +21,10 @@
 /* BODY */
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: var(--secondary-color);
-    background-color: var(--accent-color);
-
+    color: var(--text-color);
+    /* ✅ */
+    background-color: var(--background-color);
+    /* ✅ */
 }
 
 /* LAYOUT */
@@ -49,7 +50,8 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
+    /* ✅ */
     font-weight: bold;
 }
 
@@ -78,7 +80,8 @@ h2 {
     padding: 16px;
     text-align: center;
     background-color: rgba(30, 58, 138, 0.8);
-    color: white;
+    color: var(--accent-color);
+    /* ✅ */
     font-size: 2rem;
 }
 
@@ -108,7 +111,8 @@ section {
 /* TITULOS DE SECCION */
 section h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
+    /* ✅ */
     text-align: center;
     padding: 12px;
 }
