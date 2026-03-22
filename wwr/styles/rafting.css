@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #1e3a8a;
+    /* azul oscuro */
+    --secondary-color: #38bdf8;
+    /* azul claro */
+    --accent-color: #f59e0b;
+    /* naranja */
+    --text-color: #111827;
+    /* negro/gris oscuro */
+    --background-color: #f9fafb;
+    /* fondo claro */
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* LAYOUT */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    padding: 16px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* TITLES */
+h1,
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* TEXTO ENCIMA (TITULO) */
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(30, 58, 138, 0.8);
+    color: white;
+    font-size: 2rem;
+}
+
+/* CAJA INFERIOR */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(30, 58, 138, 0.8);
+    color: white;
+    padding: 16px;
+}
+
+/* IMAGEN PEQUEÑA */
+.hero article img {
+    float: right;
+    width: 120px;
+    margin-left: 16px;
+}
+
+/* SECTIONS */
+section {
+    margin: 20px 0;
+}
+
+/* TITULOS DE SECCION */
+section h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* TEXTO */
+p {
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia a {
+    text-decoration: none;
+}
