@@ -21,8 +21,9 @@
 /* BODY */
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+
 }
 
 /* LAYOUT */
