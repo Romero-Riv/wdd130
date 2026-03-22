@@ -59,6 +59,7 @@ nav a {
 h1,
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
 }
 
 /* HERO */
@@ -126,6 +127,7 @@ p {
 footer {
     text-align: center;
     margin-top: 20px;
+    color: var(--background-color);
 }
 
 /* SOCIAL MEDIA */
