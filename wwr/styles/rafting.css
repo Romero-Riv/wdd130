@@ -35,6 +35,7 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 16px;
+    color: #ffffff;
 }
 
 header img {
