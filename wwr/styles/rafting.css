@@ -81,13 +81,13 @@ h2 {
 /* TITULO */
 .hero h1 {
     position: absolute;
-    top: 40px;
-    width: 100%;
-    padding: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: white;
+    font-size: 2.5rem;
     text-align: center;
-    background-color: rgba(30, 58, 138, 0.8);
-    color: var(--accent-color);
-    font-size: 2rem;
 }
 
 /* CAJA INFERIOR */
@@ -296,4 +296,302 @@ footer {
 .employee-cards figcaption {
     margin-top: 8px;
     font-weight: bold;
+}
+
+/* ================= HOME (INDEX) ================= */
+
+/* HERO */
+.home .hero {
+    position: relative;
+}
+
+.home .hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.home .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: none;
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* CTA */
+.home .cta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.home .cta h2 {
+    background: none;
+    color: var(--primary-color);
+}
+
+.home .cta p {
+    margin: 10px 0;
+}
+
+.home .cta a {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home .cta a:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+/* GRID */
+.home .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.home .grid div {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home .grid img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* NEWSLETTER */
+.home .newsletter {
+    margin: 40px 0;
+}
+
+.home .newsletter h2 {
+    background: none;
+    color: var(--primary-color);
+}
+
+.home .newsletter p {
+    margin-bottom: 10px;
+}
+
+.home .newsletter form {
+    max-width: 400px;
+}
+
+.home .newsletter input,
+.home .newsletter button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.home .newsletter button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.home .newsletter button:hover {
+    background: var(--secondary-color);
+}
+
+/* IMAGES GLOBAL (solo index) */
+.home img {
+    border-radius: 10px;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: white;
+}
+
+nav a:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* ================= HEADER BETTER ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 16px 40px;
+}
+
+/* LOGO */
+
+header img {
+    height: 65px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+header img {
+    transform: scale(1.05);
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+/* LINKS */
+nav a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* HOVER */
+nav a:hover {
+    color: white;
+}
+
+/* LINEA PRO */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    margin: 40px auto;
+    max-width: 1100px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.home .newsletter {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= TRIPS ================= */
+
+.trips {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* CTA */
+.trips .cta {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trips .cta a {
+    background: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* GRID */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* CARD */
+.trip-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 10px;
+    color: var(--primary-color);
+}
+
+.trip-card p {
+    margin: 10px;
+}
+
+/* TABLA */
+.trip-table {
+    margin-top: 30px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--primary-color);
+    color: white;
+}
+
+.trip-card h2 {
+    color: white;
 }
